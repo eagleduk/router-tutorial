@@ -27,3 +27,7 @@
 5. 서브 라우트
 - 라우트 안의 라우트
 - url 파라메터 매핑만 잘 해주면 되는듯하다.. (Profiles.js)
+
+6. 리액트 라우터 부가기능
+- history 객체
+** 관련 문서 https://reactrouter.com/web/api/history#:~:text=The%20term%20%E2%80%9Chistory%E2%80%9D%20and%20%22,in%20JavaScript%20in%20various%20environments.
