@@ -31,3 +31,6 @@
 6. 리액트 라우터 부가기능
 - history 객체
 ** 관련 문서 https://reactrouter.com/web/api/history#:~:text=The%20term%20%E2%80%9Chistory%E2%80%9D%20and%20%22,in%20JavaScript%20in%20various%20environments.
+- withRouter
+** route 컴포넌트를 사용하지 않아도 location, match, history 를 사용할 수 있게 해준다.
+** 하지만 match 값은 실제 match 값을 사용하는 컴포넌트에서 정상적으로 값을 가져올 수 있다.

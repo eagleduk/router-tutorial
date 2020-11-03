@@ -1,3 +1,4 @@
+import WIthRouterSample from "./WIthRouterSample";
 
 const profileData = {
     velopert: {
@@ -26,6 +27,8 @@ function Profile({ match }) {
             <p>
                 {profile.description}
             </p>
+
+            <WIthRouterSample />
         </div>
     )
 }
