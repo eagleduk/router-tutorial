@@ -11,3 +11,15 @@
 3. Link
 - a 태그로의 url 이동은, 웹 페이지가 처음부터 새로 로딩되는 행위로, SAP 에는 어울리지 않는다.
 - Link 컴포넌트를 사용하여, 페이지 이동이 없이 url 주소를 변경하고, 그에 해당하는 컴포넌트를 랜더링 한다.
+
+4. 파라메터, 쿼리
+- 파라메터: url 뒤에 붙는 조건이 아닌 값... react router 에서는 url /:[parameter] 로 parameter 이름을 지정해 준다.
+    파라메터를 받을때에는 match 로 [parameter] 가 포함된 객체로 받는다. 
+    파라메터가 여러개 일때는 /:[parameter]/:[parameter]... 로 설정하고, url 값도 같은 패턴으로 전송을 해야 한다.
+    (Profile.js)
+- 쿼리: 검색시 검색 조건 url 에 ? 뒤에 붙는 [key]=[value]&[key]=[value].... 패턴의 값들.
+    쿼리를 받을때에는 search 로 ?[key]=[value]&[key]=[value] 의 문자열이 포함된 객체로 받는다.
+    search 문자열을 객체로 변환해 주기 위하여 qs 라이브러리를 사용한다. 
+    qs.parse([문자열], {옵션}); 
+    옵션중에 ignoreQueryPrefix 의 값을 true 로 해준다면 쿼리값의 ? 는 제외하고 객체를 만들어 준다. 
+    파싱한 값은 무조건 문자열로 나온다. (About.js)
