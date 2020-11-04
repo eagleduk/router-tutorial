@@ -42,3 +42,5 @@
 ** activeStyle
 ** activeClassName
 ** isActive() 함수의 결과가 true 이면 activeStyle(activeClassName) 을 적용한다.
+- etc
+** prompt, Route Config, Redirect
