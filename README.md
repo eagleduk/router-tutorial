@@ -36,4 +36,9 @@
 ** 하지만 match 값은 실제 match 값을 사용하는 컴포넌트에서 정상적으로 값을 가져올 수 있다.
 - switch
 ** 여러 라우터 중 먼저 매치된 라우터 하나만 보여줌
-** 존재하지 않는 url 주소 처리시에 유용.
+** 존재하지 않는 url 주소 처리시에 유용
+- NavLink
+** 현재 주소와 일치한다면 스타일 바꾸기
+** activeStyle
+** activeClassName
+** isActive() 함수의 결과가 true 이면 activeStyle(activeClassName) 을 적용한다.

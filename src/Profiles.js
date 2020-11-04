@@ -1,4 +1,4 @@
-import { Link, Route} from "react-router-dom";
+import { NavLink, Route} from "react-router-dom";
 import Profile from "./Profile";
 
 function Profiles() {
@@ -6,10 +6,23 @@ function Profiles() {
         <div>
             <ul>
                 <li>
-                    <Link to="/profiles/velopert">velopert</Link>
+                    <NavLink 
+                    to="/profiles/velopert"
+                    activeStyle={{background: "blue", color: "yellow"}}
+                    >
+                        velopert
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/profiles/homer">simson</Link>
+                    <NavLink 
+                    to="/profiles/homer"
+                    activeClassName="active"
+                    isActive={() => {
+                        return true;
+                    }}
+                    >
+                        simson
+                    </NavLink>
                 </li>
             </ul>
 
