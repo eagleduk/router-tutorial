@@ -29,8 +29,11 @@
 - url 파라메터 매핑만 잘 해주면 되는듯하다.. (Profiles.js)
 
 6. 리액트 라우터 부가기능
+** https://reactrouter.com/web/guides/quick-start
 - history 객체
-** 관련 문서 https://reactrouter.com/web/api/history#:~:text=The%20term%20%E2%80%9Chistory%E2%80%9D%20and%20%22,in%20JavaScript%20in%20various%20environments.
 - withRouter
 ** route 컴포넌트를 사용하지 않아도 location, match, history 를 사용할 수 있게 해준다.
 ** 하지만 match 값은 실제 match 값을 사용하는 컴포넌트에서 정상적으로 값을 가져올 수 있다.
+- switch
+** 여러 라우터 중 먼저 매치된 라우터 하나만 보여줌
+** 존재하지 않는 url 주소 처리시에 유용.
