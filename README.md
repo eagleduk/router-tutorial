@@ -44,3 +44,8 @@
 ** isActive() 함수의 결과가 true 이면 activeStyle(activeClassName) 을 적용한다.
 - etc
 ** prompt, Route Config, Redirect
+
+7. useReactRouter Hook
+- 새로운 라이브러리 (yarn add use-react-router)
+- withRouter 와 마찬가지로 location, match, history 를 사용할 수 있게 한다.
+- useReactRouter() 로 호출하고 받으면 끝.

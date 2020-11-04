@@ -1,5 +1,6 @@
 import { NavLink, Route} from "react-router-dom";
 import Profile from "./Profile";
+import RouterHookSample from "./RouterHookSample";
 
 function Profiles() {
     return (
@@ -28,6 +29,8 @@ function Profiles() {
 
             <Route path="/profiles" exact render={() => <div> select profile.. </div>} />
             <Route path="/profiles/:username" component={Profile} />
+
+            <RouterHookSample />
         </div>
     )
 }
